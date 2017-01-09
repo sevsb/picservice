@@ -1,0 +1,27 @@
+<div id="!page-wrapper">
+    <div class="clear">
+    <hr>
+    <h2>新增host</h2>
+    <div class=''>地址<input class='host' name=''></div>
+    <div class=''>数据库前缀<input class='prefix' name='' value='common'></div>
+    <div class=''>命名空间<input class='namespace' name=''></div>
+    <div>
+    <button class='submit_btn'>提交</button>
+    </div>
+    
+    <hr>
+    <h2>当前host</h2>
+    <?php
+    
+    $all_tables = picservice::get_all_prefix();
+    //var_dump($all_tables);
+    foreach ($all_tables as $table) {
+        $table = $table['Tables_in_picservice'];
+        echo $table.'<br>';
+        $rr = picservice::get_access($table);
+        var_dump($rr);
+    }
+    ?>
+    </div>
+</div>
+

@@ -1,0 +1,300 @@
+<2017-01-03 09:03:05:232>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 09:05:46:006>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::login_controller::register_action
+<2017-01-03 09:05:53:325>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::register_ajax
+<2017-01-03 09:05:53:471>     [127.0.0.1]    (NOT LOGIN)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 09:05:53:482>     [127.0.0.1]    (NOT LOGIN)    F/Helper      someone is attempting to try parameter.: /dabaojian/app/images/favicon.ico
+<2017-01-03 09:05:53:482>     [127.0.0.1]    (NOT LOGIN)    E/FATAL       		logging->fatal
+<2017-01-03 09:05:53:483>     [127.0.0.1]    (NOT LOGIN)    E/FATAL       		upload.php:get_request_assert:11
+<2017-01-03 09:05:53:483>     [127.0.0.1]    (NOT LOGIN)    E/FATAL       		login_controller.php:uploadImageViaFileReader:99
+<2017-01-03 09:05:53:483>     [127.0.0.1]    (NOT LOGIN)    E/FATAL       		login_controller->register_ajax
+<2017-01-03 09:05:53:483>     [127.0.0.1]    (NOT LOGIN)    E/FATAL       		ReflectionMethod->invoke
+<2017-01-03 09:05:53:483>     [127.0.0.1]    (NOT LOGIN)    E/FATAL       		ajax.php:dispatch_action:5
+<2017-01-03 09:06:06:547>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::register_ajax
+<2017-01-03 09:06:06:656>     [127.0.0.1]    (NOT LOGIN)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 09:06:06:686>     [127.0.0.1]    (NOT LOGIN)    D/Database    INSERT INTO bigsword_users (nick,email,password,face,register_time,groupid) VALUES ('xy','xy','1234'...(58 bytes available)
+<2017-01-03 09:06:06:731>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::login_controller::index_action
+<2017-01-03 09:06:11:302>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 09:06:11:411>     [127.0.0.1]    (NOT LOGIN)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 09:06:11:438>     [127.0.0.1]    (NOT LOGIN)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => [tokentime] => ) 
+<2017-01-03 09:06:11:438>     [127.0.0.1]    (NOT LOGIN)    D/Login       email = xy
+<2017-01-03 09:06:11:439>     [127.0.0.1]    (NOT LOGIN)    D/Login       salt = 84ca6dea7c559439d8a938d734f46808
+<2017-01-03 09:06:11:439>     [127.0.0.1]    (NOT LOGIN)    D/Login       password = 1234
+<2017-01-03 09:06:11:439>     [127.0.0.1]    (NOT LOGIN)    D/Login       c1 = 87a145126e4a111ba7543c473e26906e
+<2017-01-03 09:06:11:440>     [127.0.0.1]    (NOT LOGIN)    D/Login       cipher = 39f45dc5a1c355bfa1637a31325cce56
+<2017-01-03 09:06:24:764>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::login_controller::index_action
+<2017-01-03 09:06:25:972>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 09:06:26:086>     [127.0.0.1]    (NOT LOGIN)    D/Database    SELECT * FROM bigsword_users WHERE email = '' LIMIT 1
+<2017-01-03 09:06:26:093>     [127.0.0.1]    (NOT LOGIN)    D/Login       user = 
+<2017-01-03 11:19:44:855>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::login_controller::index_action
+<2017-01-03 11:48:34:712>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::login_controller::index_action
+<2017-01-03 11:48:36:463>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 11:51:13:906>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::login_controller::index_action
+<2017-01-03 11:51:18:055>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::login_controller::index_action
+<2017-01-03 11:52:06:792>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::login_controller::index_action
+<2017-01-03 11:53:12:005>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::login_controller::index_action
+<2017-01-03 11:53:29:620>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::login_controller::index_action
+<2017-01-03 11:53:32:386>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 11:53:32:413>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 11:53:34:728>     [127.0.0.1]    (NOT LOGIN)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 11:53:34:782>     [127.0.0.1]    (NOT LOGIN)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => [tokentime] => ) 
+<2017-01-03 11:53:34:782>     [127.0.0.1]    (NOT LOGIN)    D/Login       email = xy
+<2017-01-03 11:53:34:782>     [127.0.0.1]    (NOT LOGIN)    D/Login       salt = 7e3785c1b867ebc993690002faa9c03e
+<2017-01-03 11:53:34:782>     [127.0.0.1]    (NOT LOGIN)    D/Login       password = 1234
+<2017-01-03 11:53:34:782>     [127.0.0.1]    (NOT LOGIN)    D/Login       c1 = b1e6bf2beece52846d65df39cdf52993
+<2017-01-03 11:53:34:782>     [127.0.0.1]    (NOT LOGIN)    D/Login       cipher = 79a71bf70229e325f5cfca3dbf0998a2
+<2017-01-03 11:54:28:117>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::login_controller::index_action
+<2017-01-03 11:54:29:441>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::login_controller::index_action
+<2017-01-03 11:54:33:440>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 11:54:33:482>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 11:54:33:616>     [127.0.0.1]    (NOT LOGIN)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 11:54:33:623>     [127.0.0.1]    (NOT LOGIN)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => [tokentime] => ) 
+<2017-01-03 11:54:33:623>     [127.0.0.1]    (NOT LOGIN)    D/Login       email = xy
+<2017-01-03 11:54:33:623>     [127.0.0.1]    (NOT LOGIN)    D/Login       salt = a222af6d6787cf5d2d9b0a82460aacd7
+<2017-01-03 11:54:33:623>     [127.0.0.1]    (NOT LOGIN)    D/Login       password = 1234
+<2017-01-03 11:54:33:623>     [127.0.0.1]    (NOT LOGIN)    D/Login       c1 = 38087321e271da9ebd557c08ec2257b7
+<2017-01-03 11:54:33:624>     [127.0.0.1]    (NOT LOGIN)    D/Login       cipher = 38087321e271da9ebd557c08ec2257b7
+<2017-01-03 11:54:33:706>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 11:54:33:706>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 11:54:33:719>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483415673' WHERE id = 2
+<2017-01-03 11:54:33:724>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 11:54:33:725>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='lb8859a47fd582d72bce3d055d7bb6d9b',tokentime='1483415673' WHERE id ...(3 bytes available)
+<2017-01-03 11:54:33:733>     [127.0.0.1]    (xy)    I/Login       login success, jump to http://114.215.82.75//dabaojian/?userid=2&token=lb8859a47fd582d72bce3d055d7bb6d9b
+<2017-01-03 11:54:33:756>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 11:54:36:165>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 11:56:08:620>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::serve_index_action
+<2017-01-03 11:56:10:285>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::new_serve_action
+<2017-01-03 12:13:23:433>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::new_serve_action
+<2017-01-03 12:13:24:605>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::serve_index_action
+<2017-01-03 12:13:25:945>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 12:13:28:692>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 12:13:36:363>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 12:13:36:487>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 12:13:36:608>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 12:13:36:614>     [127.0.0.1]    (xy)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => lb8859a47fd582d72bce3d055d7bb6d9b [tokentime] => 1483415673 ) 
+<2017-01-03 12:13:36:614>     [127.0.0.1]    (xy)    D/Login       email = xy
+<2017-01-03 12:13:36:615>     [127.0.0.1]    (xy)    D/Login       salt = 67c4b72bedebd70d5bd8aa5ce557fa95
+<2017-01-03 12:13:36:615>     [127.0.0.1]    (xy)    D/Login       password = 1234
+<2017-01-03 12:13:36:615>     [127.0.0.1]    (xy)    D/Login       c1 = d36d4431c9e48618ab093afe44fd9cbc
+<2017-01-03 12:13:36:615>     [127.0.0.1]    (xy)    D/Login       cipher = d36d4431c9e48618ab093afe44fd9cbc
+<2017-01-03 12:13:36:616>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 12:13:36:616>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 12:13:36:616>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483416816' WHERE id = 2
+<2017-01-03 12:13:36:622>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 12:13:36:623>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='l7d402b0de880c0d2834bb958313a580a',tokentime='1483416816' WHERE id ...(3 bytes available)
+<2017-01-03 12:13:36:639>     [127.0.0.1]    (xy)    I/Login       login success, jump to http://114.215.82.75//dabaojian/?userid=2&token=l7d402b0de880c0d2834bb958313a580a
+<2017-01-03 12:13:36:656>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 12:14:05:889>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 12:25:03:300>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 14:21:37:997>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 14:21:40:027>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:22:29:031>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:29:11:464>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:37:01:494>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:37:13:779>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:37:54:520>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:38:31:008>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:39:15:888>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:40:10:780>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:40:11:035>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:41:22:364>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 14:41:22:503>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 14:41:23:446>     [127.0.0.1]    (NOT LOGIN)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 14:41:23:638>     [127.0.0.1]    (NOT LOGIN)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => l7d402b0de880c0d2834bb958313a580a [tokentime] => 1483416816 ) 
+<2017-01-03 14:41:23:638>     [127.0.0.1]    (NOT LOGIN)    D/Login       email = xy
+<2017-01-03 14:41:23:639>     [127.0.0.1]    (NOT LOGIN)    D/Login       salt = d79233d50dc976dd0a742c3c5dcc8da3
+<2017-01-03 14:41:23:639>     [127.0.0.1]    (NOT LOGIN)    D/Login       password = 1234
+<2017-01-03 14:41:23:639>     [127.0.0.1]    (NOT LOGIN)    D/Login       c1 = 36c615882bcb258f9146ee1740699f0f
+<2017-01-03 14:41:23:640>     [127.0.0.1]    (NOT LOGIN)    D/Login       cipher = 36c615882bcb258f9146ee1740699f0f
+<2017-01-03 14:41:23:642>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 14:41:23:643>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 14:41:23:643>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483425683' WHERE id = 2
+<2017-01-03 14:41:23:649>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 14:41:23:650>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='l82affe3731a0d918c2dcc03426358302',tokentime='1483425683' WHERE id ...(3 bytes available)
+<2017-01-03 14:41:23:658>     [127.0.0.1]    (xy)    I/Login       login success, jump to http://114.215.82.75//dabaojian/?userid=2&token=l82affe3731a0d918c2dcc03426358302
+<2017-01-03 14:41:23:739>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 14:45:07:909>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 14:45:12:126>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:45:20:578>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 14:45:20:651>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 14:45:20:752>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 14:45:20:756>     [127.0.0.1]    (xy)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => l4ffd968e3f98ceeb1afd755dc5789947 [tokentime] => 1483425822 ) 
+<2017-01-03 14:45:20:756>     [127.0.0.1]    (xy)    D/Login       email = xy
+<2017-01-03 14:45:20:756>     [127.0.0.1]    (xy)    D/Login       salt = 866cfc408be322d11892b227de5ffd4d
+<2017-01-03 14:45:20:756>     [127.0.0.1]    (xy)    D/Login       password = 1234
+<2017-01-03 14:45:20:756>     [127.0.0.1]    (xy)    D/Login       c1 = 7ea07e9af2b63387efb0053bf95a0d91
+<2017-01-03 14:45:20:756>     [127.0.0.1]    (xy)    D/Login       cipher = 7ea07e9af2b63387efb0053bf95a0d91
+<2017-01-03 14:45:20:757>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 14:45:20:757>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 14:45:20:789>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483425920' WHERE id = 2
+<2017-01-03 14:45:20:793>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 14:45:20:793>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='lfcd6b7688d73ac70de981d5ad6219770',tokentime='1483425920' WHERE id ...(3 bytes available)
+<2017-01-03 14:45:20:797>     [127.0.0.1]    (xy)    I/Login       login success, jump to ?main/main&userid=2&token=lfcd6b7688d73ac70de981d5ad6219770
+<2017-01-03 14:48:16:564>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:48:20:805>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 14:48:20:865>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 14:48:20:970>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 14:48:20:976>     [127.0.0.1]    (xy)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => lfcd6b7688d73ac70de981d5ad6219770 [tokentime] => 1483425920 ) 
+<2017-01-03 14:48:20:976>     [127.0.0.1]    (xy)    D/Login       email = xy
+<2017-01-03 14:48:20:976>     [127.0.0.1]    (xy)    D/Login       salt = c2ac56b641c2de3ac2bb32828458be35
+<2017-01-03 14:48:20:976>     [127.0.0.1]    (xy)    D/Login       password = 1234
+<2017-01-03 14:48:20:977>     [127.0.0.1]    (xy)    D/Login       c1 = fe247de878466860f00faccb5a5ba083
+<2017-01-03 14:48:20:977>     [127.0.0.1]    (xy)    D/Login       cipher = fe247de878466860f00faccb5a5ba083
+<2017-01-03 14:48:20:977>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 14:48:20:978>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 14:48:20:978>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483426100' WHERE id = 2
+<2017-01-03 14:48:20:983>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 14:48:20:983>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='l03bd977a7ba4ef813ab3bb22c1624673',tokentime='1483426100' WHERE id ...(3 bytes available)
+<2017-01-03 14:48:20:989>     [127.0.0.1]    (xy)    I/Login       login success, jump to http://114.215.82.75//dabaojian/?main/main&userid=2&token=l03bd977a7ba4ef813ab3bb22c1624673
+<2017-01-03 14:48:46:140>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:49:53:336>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:49:55:495>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 14:49:55:527>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 14:49:55:643>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 14:49:55:649>     [127.0.0.1]    (xy)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => l03bd977a7ba4ef813ab3bb22c1624673 [tokentime] => 1483426100 ) 
+<2017-01-03 14:49:55:649>     [127.0.0.1]    (xy)    D/Login       email = xy
+<2017-01-03 14:49:55:649>     [127.0.0.1]    (xy)    D/Login       salt = 8818c7f121dc90789e4078d226b753d0
+<2017-01-03 14:49:55:649>     [127.0.0.1]    (xy)    D/Login       password = 1234
+<2017-01-03 14:49:55:649>     [127.0.0.1]    (xy)    D/Login       c1 = 96241529b683931fcee541212046b90a
+<2017-01-03 14:49:55:649>     [127.0.0.1]    (xy)    D/Login       cipher = 379f23c9a0f5a3e90497c90fb200f14b
+<2017-01-03 14:49:57:497>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 14:49:57:522>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 14:49:57:630>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 14:49:57:636>     [127.0.0.1]    (xy)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => l03bd977a7ba4ef813ab3bb22c1624673 [tokentime] => 1483426100 ) 
+<2017-01-03 14:49:57:636>     [127.0.0.1]    (xy)    D/Login       email = xy
+<2017-01-03 14:49:57:636>     [127.0.0.1]    (xy)    D/Login       salt = 8818c7f121dc90789e4078d226b753d0
+<2017-01-03 14:49:57:637>     [127.0.0.1]    (xy)    D/Login       password = 1234
+<2017-01-03 14:49:57:637>     [127.0.0.1]    (xy)    D/Login       c1 = 96241529b683931fcee541212046b90a
+<2017-01-03 14:49:57:637>     [127.0.0.1]    (xy)    D/Login       cipher = 96241529b683931fcee541212046b90a
+<2017-01-03 14:49:57:637>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 14:49:57:638>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 14:49:57:638>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483426197' WHERE id = 2
+<2017-01-03 14:49:57:642>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 14:49:57:643>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='lff33cf5924a79a4f258989594e2019a4',tokentime='1483426197' WHERE id ...(3 bytes available)
+<2017-01-03 14:49:57:650>     [127.0.0.1]    (xy)    I/Login       login success, jump to http://114.215.82.75//dabaojian/?main/main&userid=2&token=lff33cf5924a79a4f258989594e2019a4
+<2017-01-03 14:50:08:917>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:50:11:688>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 14:50:11:712>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 14:50:11:816>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 14:50:11:822>     [127.0.0.1]    (xy)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => lff33cf5924a79a4f258989594e2019a4 [tokentime] => 1483426197 ) 
+<2017-01-03 14:50:11:822>     [127.0.0.1]    (xy)    D/Login       email = xy
+<2017-01-03 14:50:11:822>     [127.0.0.1]    (xy)    D/Login       salt = 3aaa99d6b95fb4533a3cfbc6324faf7c
+<2017-01-03 14:50:11:823>     [127.0.0.1]    (xy)    D/Login       password = 1234
+<2017-01-03 14:50:11:823>     [127.0.0.1]    (xy)    D/Login       c1 = cc6e0caf7ec028053a600d2c06307777
+<2017-01-03 14:50:11:823>     [127.0.0.1]    (xy)    D/Login       cipher = cc6e0caf7ec028053a600d2c06307777
+<2017-01-03 14:50:11:824>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 14:50:11:824>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 14:50:11:824>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483426211' WHERE id = 2
+<2017-01-03 14:50:11:830>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 14:50:11:830>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='l2a381f5600f7b5b6de24faada95c13c0',tokentime='1483426211' WHERE id ...(3 bytes available)
+<2017-01-03 14:50:11:836>     [127.0.0.1]    (xy)    I/Login       login success, jump to http://114.215.82.75//dabaojian/?main/main&userid=2&token=l2a381f5600f7b5b6de24faada95c13c0
+<2017-01-03 14:50:53:728>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:50:56:413>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 14:50:56:528>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 14:50:56:634>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 14:50:56:662>     [127.0.0.1]    (xy)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => l2a381f5600f7b5b6de24faada95c13c0 [tokentime] => 1483426211 ) 
+<2017-01-03 14:50:56:662>     [127.0.0.1]    (xy)    D/Login       email = xy
+<2017-01-03 14:50:56:662>     [127.0.0.1]    (xy)    D/Login       salt = bb2a2488f0136a9e2812682c19427363
+<2017-01-03 14:50:56:662>     [127.0.0.1]    (xy)    D/Login       password = 1234
+<2017-01-03 14:50:56:662>     [127.0.0.1]    (xy)    D/Login       c1 = 8a9f5436c5eb015e80280611b1d3df4b
+<2017-01-03 14:50:56:662>     [127.0.0.1]    (xy)    D/Login       cipher = 8a9f5436c5eb015e80280611b1d3df4b
+<2017-01-03 14:50:56:663>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 14:50:56:663>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 14:50:56:664>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483426256' WHERE id = 2
+<2017-01-03 14:50:56:670>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 14:50:56:670>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='lf15de66c21e139d93cc6fec6d1d9a278',tokentime='1483426256' WHERE id ...(3 bytes available)
+<2017-01-03 14:50:56:678>     [127.0.0.1]    (xy)    I/Login       login success, jump to http://114.215.82.75//dabaojian/?main/main&userid=2&token=lf15de66c21e139d93cc6fec6d1d9a278
+<2017-01-03 14:52:47:884>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:53:04:659>     [127.0.0.1]    (NOT LOGIN)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:53:08:912>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 14:53:08:938>     [127.0.0.1]    (NOT LOGIN)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 14:53:09:043>     [127.0.0.1]    (NOT LOGIN)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 14:53:09:049>     [127.0.0.1]    (NOT LOGIN)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => lf15de66c21e139d93cc6fec6d1d9a278 [tokentime] => 1483426256 ) 
+<2017-01-03 14:53:09:049>     [127.0.0.1]    (NOT LOGIN)    D/Login       email = xy
+<2017-01-03 14:53:09:049>     [127.0.0.1]    (NOT LOGIN)    D/Login       salt = d5940be27e6b55d71f43bb31049b4569
+<2017-01-03 14:53:09:049>     [127.0.0.1]    (NOT LOGIN)    D/Login       password = 1234
+<2017-01-03 14:53:09:050>     [127.0.0.1]    (NOT LOGIN)    D/Login       c1 = 251fece9fc1c0e4d1f200fbef171d600
+<2017-01-03 14:53:09:050>     [127.0.0.1]    (NOT LOGIN)    D/Login       cipher = 251fece9fc1c0e4d1f200fbef171d600
+<2017-01-03 14:53:09:050>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 14:53:09:051>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 14:53:09:051>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483426389' WHERE id = 2
+<2017-01-03 14:53:09:056>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 14:53:09:057>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='laaa74cf2734ba764508d77913a5bf89e',tokentime='1483426389' WHERE id ...(3 bytes available)
+<2017-01-03 14:53:09:063>     [127.0.0.1]    (xy)    I/Login       login success, jump to http://127.0.0.1//dabaojian/?userid=2&token=laaa74cf2734ba764508d77913a5bf89e
+<2017-01-03 14:54:06:515>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:54:08:515>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 14:54:08:548>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 14:54:08:663>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 14:54:08:669>     [127.0.0.1]    (xy)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => laaa74cf2734ba764508d77913a5bf89e [tokentime] => 1483426389 ) 
+<2017-01-03 14:54:08:669>     [127.0.0.1]    (xy)    D/Login       email = xy
+<2017-01-03 14:54:08:669>     [127.0.0.1]    (xy)    D/Login       salt = 71d17aca7ed2ba54df17b5b86e74e14e
+<2017-01-03 14:54:08:670>     [127.0.0.1]    (xy)    D/Login       password = 1234
+<2017-01-03 14:54:08:670>     [127.0.0.1]    (xy)    D/Login       c1 = 8a46e2113b98cf94a363a4c34a901b00
+<2017-01-03 14:54:08:670>     [127.0.0.1]    (xy)    D/Login       cipher = 8a46e2113b98cf94a363a4c34a901b00
+<2017-01-03 14:54:08:670>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 14:54:08:671>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 14:54:08:671>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483426448' WHERE id = 2
+<2017-01-03 14:54:08:676>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 14:54:08:676>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='ld46f481a44b5aaa771be91cb139b82cf',tokentime='1483426448' WHERE id ...(3 bytes available)
+<2017-01-03 14:54:08:683>     [127.0.0.1]    (xy)    I/Login       login success, jump to http://127.0.0.1//dabaojian/?userid=2&token=ld46f481a44b5aaa771be91cb139b82cf
+<2017-01-03 14:54:08:699>     [127.0.0.1]    (xy)    D/Portal      access: app:::userid=2_controller::index_action
+<2017-01-03 14:54:46:915>     [127.0.0.1]    (xy)    D/Portal      access: app:::userid=2_controller::index_action
+<2017-01-03 14:54:47:787>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:54:49:266>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:54:50:085>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:54:53:364>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 14:54:53:416>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 14:54:53:524>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 14:54:53:529>     [127.0.0.1]    (xy)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => ld46f481a44b5aaa771be91cb139b82cf [tokentime] => 1483426448 ) 
+<2017-01-03 14:54:53:529>     [127.0.0.1]    (xy)    D/Login       email = xy
+<2017-01-03 14:54:53:529>     [127.0.0.1]    (xy)    D/Login       salt = 8fb3124d689e242356f78b5293f4e8b5
+<2017-01-03 14:54:53:529>     [127.0.0.1]    (xy)    D/Login       password = 1234
+<2017-01-03 14:54:53:529>     [127.0.0.1]    (xy)    D/Login       c1 = dae9795bd38c3ee25db482be6f2acd59
+<2017-01-03 14:54:53:529>     [127.0.0.1]    (xy)    D/Login       cipher = dae9795bd38c3ee25db482be6f2acd59
+<2017-01-03 14:54:53:530>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 14:54:53:530>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 14:54:53:530>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483426493' WHERE id = 2
+<2017-01-03 14:54:53:534>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 14:54:53:535>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='ldfce0420cac8e74cc417e787de7aa932',tokentime='1483426493' WHERE id ...(3 bytes available)
+<2017-01-03 14:54:53:539>     [127.0.0.1]    (xy)    I/Login       login success, jump to http://114.215.82.75//dabaojian/?userid=2&token=ldfce0420cac8e74cc417e787de7aa932
+<2017-01-03 14:54:53:558>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 14:55:25:230>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 14:55:39:138>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 14:55:39:898>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:55:40:768>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:55:41:563>     [127.0.0.1]    (xy)    D/Portal      access: app:::login_controller::register_action
+<2017-01-03 14:55:42:929>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:55:49:711>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 14:55:49:736>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 14:55:49:842>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 14:55:49:849>     [127.0.0.1]    (xy)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => ldfce0420cac8e74cc417e787de7aa932 [tokentime] => 1483426493 ) 
+<2017-01-03 14:55:49:850>     [127.0.0.1]    (xy)    D/Login       email = xy
+<2017-01-03 14:55:49:850>     [127.0.0.1]    (xy)    D/Login       salt = f11984eb70df799ee1897ad6995557fb
+<2017-01-03 14:55:49:850>     [127.0.0.1]    (xy)    D/Login       password = 1234
+<2017-01-03 14:55:49:850>     [127.0.0.1]    (xy)    D/Login       c1 = e783b89b2a89fe419404ae4dbc9a0342
+<2017-01-03 14:55:49:850>     [127.0.0.1]    (xy)    D/Login       cipher = e783b89b2a89fe419404ae4dbc9a0342
+<2017-01-03 14:55:49:851>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 14:55:49:851>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 14:55:49:852>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483426549' WHERE id = 2
+<2017-01-03 14:55:49:857>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 14:55:49:858>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='lb726f8f0d8d6e75c290dfcf1093b555b',tokentime='1483426549' WHERE id ...(3 bytes available)
+<2017-01-03 14:55:49:864>     [127.0.0.1]    (xy)    I/Login       login success, jump to http://114.215.82.75//dabaojian/?main/main&userid=2&token=lb726f8f0d8d6e75c290dfcf1093b555b
+<2017-01-03 14:56:34:428>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 14:56:36:350>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::get_salt_ajax
+<2017-01-03 14:56:36:386>     [127.0.0.1]    (xy)    D/Action      access: app:::login_controller::login_ajax
+<2017-01-03 14:56:36:492>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM bigsword_users WHERE email = 'xy' LIMIT 1
+<2017-01-03 14:56:36:498>     [127.0.0.1]    (xy)    D/Login       user = Array ( [id] => 2 [nick] => xy [email] => xy [password] => 1234 [face] => 7e9707ff5d98216e89574d78dc215f64.jpeg [register_time] => 1483405566 [groupid] => 2 [token] => lb726f8f0d8d6e75c290dfcf1093b555b [tokentime] => 1483426549 ) 
+<2017-01-03 14:56:36:498>     [127.0.0.1]    (xy)    D/Login       email = xy
+<2017-01-03 14:56:36:499>     [127.0.0.1]    (xy)    D/Login       salt = ad604ca08f173f722e3df31b9856e29b
+<2017-01-03 14:56:36:499>     [127.0.0.1]    (xy)    D/Login       password = 1234
+<2017-01-03 14:56:36:499>     [127.0.0.1]    (xy)    D/Login       c1 = b99f5a6b5a2a8e121008b0ae3671631f
+<2017-01-03 14:56:36:499>     [127.0.0.1]    (xy)    D/Login       cipher = b99f5a6b5a2a8e121008b0ae3671631f
+<2017-01-03 14:56:36:499>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: last_login_time at C:\wamp3\www\dabaojian\app\app\login.class.php:29
+<2017-01-03 14:56:36:500>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined index: admin at C:\wamp3\www\dabaojian\app\app\login.class.php:30
+<2017-01-03 14:56:36:500>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET last_login_time='1483426596' WHERE id = 2
+<2017-01-03 14:56:36:506>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S22 [1] => 1054 [2] => Unknown column 'last_login_time' in 'field list' ) 
+<2017-01-03 14:56:36:507>     [127.0.0.1]    (xy)    D/Database    UPDATE bigsword_users SET token='l05df5563d6a704e1e27bfe3f0a32bfe4',tokentime='1483426596' WHERE id ...(3 bytes available)
+<2017-01-03 14:56:36:512>     [127.0.0.1]    (xy)    I/Login       login success, jump to http://127.0.0.1//dabaojian/?main/main&userid=2&token=l05df5563d6a704e1e27bfe3f0a32bfe4
+<2017-01-03 14:56:36:571>     [127.0.0.1]    (xy)    D/Portal      access: app:::main_controller::main_action
+<2017-01-03 14:57:40:681>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 15:01:28:612>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-03 15:04:09:881>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
