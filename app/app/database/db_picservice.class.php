@@ -45,10 +45,6 @@ class db_picservice extends database {
         return $this->insert($prefix.'_access' , array("host" => $host, "code" => $code, "namespace" => $namespace));
     }
     
-    public function get_auth_code() {
-        return $this->get_one_table(TABLE_SETTINGS, "name = 'authorized_code'");
-    }
-    
     public function get_access($table) {
         return $this->get_all_table($table);
     }
@@ -56,9 +52,9 @@ class db_picservice extends database {
     public function get_all_prefix() {
         return $this->show_all_tables();
     }
-
-    public function update_auth_code($code) {
-        return $this->update(TABLE_SETTINGS, array("value" => $code), "name = $authorized_code");
+    
+    public function update_token($host, $code, $token, $expired) {
+        return $this->update(MYSQL_PREFIX . 'access', array("token" => $token, "expired" => $expired), "host = '$host' and code = '$code'");
     }
     
 

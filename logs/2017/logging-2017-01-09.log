@@ -1336,3 +1336,217 @@
 <2017-01-09 15:48:46:172>     [127.0.0.1]    (NOT LOGIN)    D/Database    show tables
 <2017-01-09 15:48:46:177>     [127.0.0.1]    (NOT LOGIN)    D/Database    SELECT * FROM common22_access 
 <2017-01-09 15:48:46:184>     [127.0.0.1]    (NOT LOGIN)    D/Database    SELECT * FROM common_access 
+<2017-01-09 16:03:27:934>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 16:03:28:053>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 16:03:28:060>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 16:03:28:075>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 16:03:39:882>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::add_ajax
+<2017-01-09 16:03:39:992>     [127.0.0.1]    (xy)    D/Database    CREATE TABLE IF NOT EXISTS common_access (id INT AUTO_INCREMENT PRIMARY KEY, host TEXT, code TEXT, token TEXT, expired TEXT, namespace TEXT) DEFAULT CHARSET utf8
+<2017-01-09 16:03:39:999>     [127.0.0.1]    (xy)    D/Database    0
+<2017-01-09 16:03:39:999>     [127.0.0.1]    (xy)    D/Database    INSERT INTO common_access (host,code,namespace) VALUES ('http://127.0.0.1/dabaojian/','ffed38de60671...(33 bytes available)
+<2017-01-09 16:03:47:547>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 16:03:47:802>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 16:03:47:810>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 16:03:47:814>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:11:53:888>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:12:00:373>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:12:00:381>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:12:00:427>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:20:16:292>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:20:16:364>     [127.0.0.1]    (xy)    E/Error.Error    [1] Using $this when not in object context at C:\wamp3\www\picservice\app\app\picservice.class.php:23
+<2017-01-09 17:20:16:364>     [127.0.0.1]    (xy)    E/Error.Fatal    Fatal Error. Aborting...
+<2017-01-09 17:20:53:944>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:20:54:046>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common__access WHERE host = 'http://127.0.0.1/dabaojian/' and code = '...(33 bytes available)
+<2017-01-09 17:20:54:050>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42S02 [1] => 1146 [2] => Table 'picservice.common__access' doesn't exist ) 
+<2017-01-09 17:20:54:114>     [127.0.0.1]    (xy)    E/Error.Error    [1] Call to a member function fetch() on boolean at C:\wamp3\www\picservice\framework\database.php:154
+<2017-01-09 17:20:54:114>     [127.0.0.1]    (xy)    E/Error.Fatal    Fatal Error. Aborting...
+<2017-01-09 17:22:12:688>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:22:12:817>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:22:12:828>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:22:12:828>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:22:12:897>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined variable: ret at C:\wamp3\www\picservice\app\controller\picservice_controller.php:25
+<2017-01-09 17:29:24:177>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:29:24:443>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:29:24:464>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:29:24:480>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:29:24:480>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483957764' WHERE host = ...(71 bytes available)
+<2017-01-09 17:29:24:494>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42000 [1] => 1064 [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://127.0.0.1/dabaojian/ and code = ffed38de6067164817c9c04233e21e6d' at line 1 ) 
+<2017-01-09 17:29:24:494>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined variable: ret at C:\wamp3\www\picservice\app\controller\picservice_controller.php:27
+<2017-01-09 17:29:28:857>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:29:28:961>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:29:28:965>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:29:28:965>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:29:28:966>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483957768' WHERE host = ...(71 bytes available)
+<2017-01-09 17:29:28:970>     [127.0.0.1]    (xy)    D/Database    FAIL query: Array ( [0] => 42000 [1] => 1064 [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://127.0.0.1/dabaojian/ and code = ffed38de6067164817c9c04233e21e6d' at line 1 ) 
+<2017-01-09 17:29:28:970>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined variable: ret at C:\wamp3\www\picservice\app\controller\picservice_controller.php:27
+<2017-01-09 17:29:51:820>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:29:51:964>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:29:52:019>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:29:52:037>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:30:40:244>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:30:40:353>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:30:40:358>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:30:40:358>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:30:40:359>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483957840' WHERE host = ...(75 bytes available)
+<2017-01-09 17:30:40:365>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined variable: ret at C:\wamp3\www\picservice\app\controller\picservice_controller.php:27
+<2017-01-09 17:30:49:016>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:30:49:169>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:30:49:230>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:30:49:290>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:32:06:880>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:32:07:019>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:32:07:023>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:32:07:023>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:32:07:024>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483957927' WHERE host = ...(75 bytes available)
+<2017-01-09 17:33:20:052>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:33:20:157>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:33:20:180>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:33:20:181>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483958000' WHERE host = ...(75 bytes available)
+<2017-01-09 17:33:20:190>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:33:20:191>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:33:35:097>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:33:35:202>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:33:35:205>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:33:35:209>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:33:36:472>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:33:36:574>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:33:36:578>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:33:36:581>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:33:39:465>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:33:39:582>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:33:39:603>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:33:39:663>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483958019' WHERE host = ...(75 bytes available)
+<2017-01-09 17:33:39:674>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:33:39:674>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:33:40:174>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:33:40:324>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:33:40:347>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:33:40:382>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:35:52:592>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:35:52:718>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:35:52:728>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:35:52:728>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483958152' WHERE host = ...(75 bytes available)
+<2017-01-09 17:35:52:735>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:35:52:735>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:37:23:395>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:37:28:907>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:37:28:914>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:37:28:916>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483958248' WHERE host = ...(75 bytes available)
+<2017-01-09 17:37:28:927>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:37:28:927>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:37:28:943>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:37:29:906>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = ''
+<2017-01-09 17:37:29:924>     [127.0.0.1]    (xy)    E/token auth_ret:    
+<2017-01-09 17:37:29:925>     [127.0.0.1]    (xy)    E/Error.Notice    [8] Undefined variable: udate_token_ret at C:\wamp3\www\picservice\app\controller\picservice_controller.php:29
+<2017-01-09 17:38:01:487>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:38:02:033>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:38:02:041>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:38:02:073>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483958282' WHERE host = ...(75 bytes available)
+<2017-01-09 17:38:02:083>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:38:02:083>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:38:26:589>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:38:28:704>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:38:28:709>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:38:28:709>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483958308' WHERE host = ...(75 bytes available)
+<2017-01-09 17:38:28:714>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:38:28:714>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:38:48:568>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:38:48:698>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:38:48:709>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:38:48:710>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483958328' WHERE host = ...(75 bytes available)
+<2017-01-09 17:38:48:718>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:38:48:718>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:46:42:096>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:46:42:237>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:46:42:249>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:46:42:250>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483958802' WHERE host = ...(75 bytes available)
+<2017-01-09 17:46:42:259>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:46:42:259>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:47:13:782>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:47:13:920>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:47:13:937>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:47:13:938>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483958833' WHERE host = ...(75 bytes available)
+<2017-01-09 17:47:13:971>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:47:13:971>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:47:22:846>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:47:23:190>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:47:23:198>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:47:23:209>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:47:25:314>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:47:25:436>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:47:25:447>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:47:25:457>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:47:35:699>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:47:35:812>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:47:35:820>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:47:35:826>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:47:36:767>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:47:36:972>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:47:36:997>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:47:37:004>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:47:42:134>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:47:42:298>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:47:42:306>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:47:42:315>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:47:42:329>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:47:42:620>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:47:42:626>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:47:42:627>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483958862' WHERE host = ...(75 bytes available)
+<2017-01-09 17:47:42:633>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:47:42:633>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:47:43:087>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:47:43:198>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:47:43:223>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:47:43:231>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:47:44:013>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:47:44:125>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:47:44:134>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:47:44:145>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:47:50:870>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 17:47:51:007>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 17:47:51:014>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 17:47:51:020>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 17:52:34:310>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:52:34:425>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:52:34:431>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:52:34:431>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483959154' WHERE host = ...(75 bytes available)
+<2017-01-09 17:52:34:436>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:52:34:437>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:52:40:176>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:52:40:518>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:52:40:522>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:52:40:549>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483959160' WHERE host = ...(75 bytes available)
+<2017-01-09 17:52:40:556>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:52:40:556>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:53:29:921>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:53:30:042>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:53:30:049>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:53:30:050>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483959210' WHERE host = ...(75 bytes available)
+<2017-01-09 17:53:30:055>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:53:30:056>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 17:57:56:357>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 17:57:56:468>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 17:57:56:474>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 17:57:56:475>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483959476' WHERE host = ...(75 bytes available)
+<2017-01-09 17:57:56:481>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 17:57:56:481>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 18:02:18:708>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 18:02:18:937>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 18:02:18:942>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 18:02:18:943>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483959738' WHERE host = ...(75 bytes available)
+<2017-01-09 18:02:18:956>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 18:02:18:956>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 18:07:15:817>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 18:07:16:018>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 18:07:16:062>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 18:07:16:079>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 
+<2017-01-09 18:08:14:206>     [127.0.0.1]    (xy)    D/Action      access: app:::picservice_controller::request_token_ajax
+<2017-01-09 18:08:14:330>     [127.0.0.1]    (xy)    D/Database    SELECT COUNT(*) as count FROM common_access WHERE host = 'http://127.0.0.1/dabaojian/' and code = 'f...(32 bytes available)
+<2017-01-09 18:08:14:337>     [127.0.0.1]    (xy)    E/token auth_ret:    1
+<2017-01-09 18:08:14:337>     [127.0.0.1]    (xy)    D/Database    UPDATE common_access SET token='073d8c3268a85113a21d79f768a074b4',expired='1483960094' WHERE host = ...(75 bytes available)
+<2017-01-09 18:08:14:346>     [127.0.0.1]    (xy)    E/token refresh:    073d8c3268a85113a21d79f768a074b4
+<2017-01-09 18:08:14:346>     [127.0.0.1]    (xy)    E/token udate_token_ret:    1
+<2017-01-09 18:08:20:008>     [127.0.0.1]    (xy)    D/Portal      access: app:::index_controller::index_action
+<2017-01-09 18:08:20:122>     [127.0.0.1]    (xy)    D/Database    show tables
+<2017-01-09 18:08:20:129>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common22_access 
+<2017-01-09 18:08:20:140>     [127.0.0.1]    (xy)    D/Database    SELECT * FROM common_access 

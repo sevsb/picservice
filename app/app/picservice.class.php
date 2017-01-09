@@ -19,7 +19,15 @@ class picservice {
         return $ret;
     }
     
-    
+    public static function auth_code($host, $code) {
+        $count = db_picservice::inst()->get_count(MYSQL_PREFIX .'access',"host = '$host' and code = '$code'");
+        return $count ? true : false;
+    }
+
+    public static function update_token($host, $code, $token, $expired) {
+        $ret = db_picservice::inst()->update_token($host, $code, $token, $expired);
+        return $ret;
+    }
     
     
     

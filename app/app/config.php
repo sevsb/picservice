@@ -39,7 +39,7 @@ defined('MYSQL_PREFIX') or define('MYSQL_PREFIX', 'common_');
 defined('TABLE_SETTINGS') or define('TABLE_SETTINGS', MYSQL_PREFIX . "settings");
 
 // db_user
-
+defined('EXPIRED_TIME') or define('EXPIRED_TIME', 3600);
 
 
 
