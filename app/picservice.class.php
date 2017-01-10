@@ -29,7 +29,7 @@ class picservice {
         if (empty($ret['namespace']) || (time() > $ret['expired'])) {
             return false;
         }
-        return $ret['namespace'];
+        return $ret;
     }
 
     public static function update_token($host, $code, $token, $expired) {

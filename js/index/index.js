@@ -8,7 +8,7 @@ $(document).ready(function() {
         var prefix = $('.prefix').val();
         
         $.ajax({
-            url: "ajax.php?action=" + 'picservice.add',
+            url: "ajax.php?action=" + 'picservice.add_host',
             type: 'post',
             data: {host: host, namespace: namespace, prefix: prefix},
             success: function (data) {

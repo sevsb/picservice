@@ -4,11 +4,43 @@ include_once(dirname(__FILE__) . "/../app/picservice.class.php");
 
 class picservice_controller {
 
-    public function add_ajax() {
+    public function show_action() {
+        $token = get_request("token");
+        $filename = get_request("filename");
+        $refer = !empty($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : null;
+        
+        $ret = picservice::auth_token($token);
+        $refer_host = explode('?',$refer);
+        $refer_host = $refer_host[0];
+        $img_path = UPLOAD_DIR . "/" . MYSQL_PREFIX . 'access/' .$ret["namespace"];
+        $img_file = $img_path . "/" . $filename;
+       
+        if (!$ret) {
+            echo 'token authorise failed';
+            logging::e("token authorise failed:", $ret);
+            return;
+        }
+        if ($refer_host != $ret['host']) {
+            echo "http_referer failed";
+            logging::e("http_referer failed ", $ret['host'] . "|" . $refer_host);
+            return;
+        }
+        if (!file_exists($img_file)) {
+            echo "img_show failed.file not existed";
+            logging::e("img_show failed.file not existed:", $img_file);
+            return;
+        }
+        
+        header ('Content-Type: image/png');
+        $c = file_get_contents($img_file);
+        echo $c;
+    }
+    
+    public function add_host_ajax() {
         $host = get_request('host');
-        //$host = rtrim($host, '/') . '/';
         $namespace = get_request('namespace');
         $prefix = get_request('prefix');
+        
         $ret = picservice::add_host($host, $namespace, $prefix);
         return $ret;
     }
@@ -34,12 +66,12 @@ class picservice_controller {
         $token = get_request('token');
         $img_src = get_request('img_src');
 
-        $namespace = picservice::auth_token($token);
-        if (!$namespace) {
+        $ret = picservice::auth_token($token);
+        if (!$ret) {
             return 'token authorise failed';
         }
         
-        $upload_path = UPLOAD_DIR . "/$namespace/";
+        $upload_path = UPLOAD_DIR . "/". MYSQL_PREFIX . "access/".$ret['namespace']."/";
         logging::e("upload_image_path:", $upload_path);
         $ret = uploadImageViaFileReader($img_src, $upload_path, 'callback', null);
         logging::e("upload_image_ret:", $ret);
