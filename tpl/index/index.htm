@@ -8,19 +8,42 @@
     <div>
     <button class='submit_btn'>提交</button>
     </div>
-    
     <hr>
     <h2>当前host</h2>
     <?php
-    
     $all_tables = picservice::get_all_prefix();
     //var_dump($all_tables);
     foreach ($all_tables as $table) {
         $table = $table['Tables_in_picservice'];
         echo $table.'<br>';
-        $rr = picservice::get_access($table);
-        var_dump($rr);
-    }
+        ?>
+        <table class="table table-hover">
+            <tr>
+                <td>id</td>
+                <td>host</td>
+                <td>code</td>
+                <td>token</td>
+                <td>expired</td>
+                <td>namespace</td>
+            </tr>
+        <?php
+        $tab = picservice::get_access($table);
+        foreach ($tab as $tb) {
+        ?>
+            <tr>
+                <td><?php echo $tb['id']; ?></td>
+                <td><?php echo $tb['host']; ?></td>
+                <td><?php echo $tb['code']; ?></td>
+                <td><?php echo $tb['token']; ?></td>
+                <td><?php echo $tb['expired']; ?></td>
+                <td><?php echo $tb['namespace']; ?></td>
+            </tr>
+        <?php
+        }
+        ?>
+        <table>
+        <?php
+    }    
     ?>
     </div>
 </div>

@@ -19,7 +19,7 @@ class picservice_controller {
         $auth_ret = picservice::auth_code($host, $code);
         logging::e("token auth_ret:", $auth_ret);
         if ($auth_ret) {
-            $token = md5($host . $code);
+            $token = md5($host . $code . time());
             $expired = time() + EXPIRED_TIME;
 
             $udate_token_ret = picservice::update_token($host, $code, $token, $expired);
