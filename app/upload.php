@@ -2,7 +2,7 @@
 
 include_once(dirname(__FILE__) . "/config.php");
 
-function uploadImageViaFileReader($imgsrc = null, $callback = null, $args = null) {
+function uploadImageViaFileReader($imgsrc = null,$upload_path = UPLOAD_DIR, $callback = null, $args = null) {
     $whitelist = array("image/jpeg", "image/pjpeg", "image/png", "image/x-png", "image/gif");
 
     if ($imgsrc == null) {
@@ -14,16 +14,19 @@ function uploadImageViaFileReader($imgsrc = null, $callback = null, $args = null
     // data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgIC…gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z
     $arr = explode(";", $imgsrc);
     if (count($arr) != 2) {
-        return "fail|数据错误.";
+        return callback('fail', '数据错误');
+        //return "fail|数据错误.";
     }
 
     $arr1 = explode(":", $arr[0]);
     if (count($arr1) != 2) {
-        return "fail|数据错误..";
+        return callback('fail', '数据错误');
+        //return "fail|数据错误..";
     }
     $type = $arr1[1];
     if (!in_array($type, $whitelist)) {
-        return "fail|不支持的文件格式: $type.";
+        return callback('fail', "不支持的文件格式: $type");
+        //return "fail|不支持的文件格式: $type.";
     }
 
     $type = explode('/', $type);
@@ -32,22 +35,28 @@ function uploadImageViaFileReader($imgsrc = null, $callback = null, $args = null
     $arr = explode('base64,', $imgsrc);
     $image_content = base64_decode($arr[1]);
 
-    if (!file_exists(UPLOAD_DIR)) {
-        $ret = @mkdir(UPLOAD_DIR, 0777, true);
+    if (!file_exists($upload_path)) {
+        $ret = @mkdir($upload_path, 0777, true);
         if ($ret === false) {
-            return "fail|上传目录创建失败.";
+            return callback('fail', '上传目录创建失败');
+            //return "fail|上传目录创建失败.";
         }
     }
 
     $filename = md5($image_content) . ".$extension";
 
-    $filepath = UPLOAD_DIR . "/$filename";
+    $filepath = $upload_path . "/$filename";
     if (!file_put_contents($filepath, $image_content)) {
-        return 'fail|创建文件失败.';
+        return callback('fail', '创建文件失败');
+        //return 'fail|创建文件失败.';
     }
     if ($callback != null) {
-        return $callback($filename, $args);
+        return $callback('success', $filename);
     }
     return "success";
+}
+
+function callback($status, $info) {
+    return array("status"=>$status, "info"=>$info);
 }
 

@@ -97,7 +97,9 @@ function __file_upload(obj, success, fail, extra) {
 }
 
 
-
+function trimStr(str, d){
+    return str.replace(/(^\s*)|(\s*$)/g, d);
+}
 
 
 

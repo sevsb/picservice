@@ -21,6 +21,7 @@ $(document).ready(function() {
                     data: {code: data.ret},
                     success: function (data) {
                         console.debug(data);
+                        window.location.href = '?';
                     }
                 });
             }

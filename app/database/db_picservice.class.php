@@ -57,6 +57,17 @@ class db_picservice extends database {
         return $this->update(MYSQL_PREFIX . 'access', array("token" => $token, "expired" => $expired), "host = '$host' and code = '$code'");
     }
     
+    public function auth_code($host, $code) {
+        $count = $this->get_count(MYSQL_PREFIX .'access',"host = '$host' and code = '$code'");
+        return $count ? true : false;
+    }
+    
+    public function auth_token($token) {
+        //$count = $this->get_count(MYSQL_PREFIX .'access',"token = '$token'");
+        $ret = $this->get_one_table(MYSQL_PREFIX .'access',"token = '$token'");
+        return $ret;
+    }
+
 
     
 };
