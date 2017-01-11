@@ -22,13 +22,14 @@ defined('UPLOAD_URL') or define('UPLOAD_URL', rtrim(INSTANCE_URL, "/") . '/uploa
 defined('THUMBNAIL_DIR') or define('THUMBNAIL_DIR', ROOT_PATH . '/upload/thumbnails');
 defined('THUMBNAIL_URL') or define('THUMBNAIL_URL', rtrim(INSTANCE_URL, "/") . '/upload/thumbnails');
 defined('UPLOAD_LIMIT') or define('UPLOAD_LIMIT', 10 * 1024 * 1024);
-
+//for test
+defined('APPSERVICE_IP') or define('APPSERVICE_IP', "http://124.207.20.98/");
 
 // security
 defined('ALLOW_ROOT') or define('ALLOW_ROOT', true);
 
 // database
-defined('MYSQL_SERVER') or define('MYSQL_SERVER', '180.76.188.68');
+defined('MYSQL_SERVER') or define('MYSQL_SERVER', '180.76.160.113');
 defined('MYSQL_USERNAME') or define('MYSQL_USERNAME', 'picservice');
 defined('MYSQL_PASSWORD') or define('MYSQL_PASSWORD', 'picservice');
 defined('MYSQL_DATABASE') or define('MYSQL_DATABASE', 'picservice');

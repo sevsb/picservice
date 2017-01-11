@@ -5,6 +5,7 @@ include_once(dirname(__FILE__) . "/../app/picservice.class.php");
 class picservice_controller {
 
     public function show_action() {
+        header("Access-Control-Allow-Origin: " . APPSERVICE_IP );
         $token = get_request("token");
         $filename = get_request("filename");
         $refer = !empty($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : null;
@@ -46,6 +47,7 @@ class picservice_controller {
     }
     
     public function request_token_ajax() {
+        header("Access-Control-Allow-Origin: " . APPSERVICE_IP );
         $host = get_request('host');
         $code = get_request('code');
 
@@ -63,6 +65,7 @@ class picservice_controller {
     }
     
     public function upload_image_ajax() {
+        header("Access-Control-Allow-Origin: " . APPSERVICE_IP );
         $token = get_request('token');
         $img_src = get_request('img_src');
 
