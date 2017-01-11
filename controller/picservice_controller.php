@@ -89,7 +89,7 @@ class picservice_controller {
 
         $ret = picservice::auth_token($token);
         if (!$ret) {
-            return 'token authorise failed';
+            return array("status" => "fail","info" => 'token_fail');
         }
         
         $upload_path = UPLOAD_DIR . "/". MYSQL_PREFIX . "access/".$ret['namespace']."/";
