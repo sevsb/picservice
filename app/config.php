@@ -23,7 +23,7 @@ defined('THUMBNAIL_DIR') or define('THUMBNAIL_DIR', ROOT_PATH . '/upload/thumbna
 defined('THUMBNAIL_URL') or define('THUMBNAIL_URL', rtrim(INSTANCE_URL, "/") . '/upload/thumbnails');
 defined('UPLOAD_LIMIT') or define('UPLOAD_LIMIT', 10 * 1024 * 1024);
 //for test
-defined('APPSERVICE_IP') or define('APPSERVICE_IP', "http://124.207.20.98/");
+defined('APPSERVICE_IP') or define('APPSERVICE_IP', "http://124.207.20.98");
 
 // security
 defined('ALLOW_ROOT') or define('ALLOW_ROOT', true);
