@@ -24,6 +24,7 @@ defined('THUMBNAIL_URL') or define('THUMBNAIL_URL', rtrim(INSTANCE_URL, "/") . '
 defined('UPLOAD_LIMIT') or define('UPLOAD_LIMIT', 10 * 1024 * 1024);
 //for test
 defined('APPSERVICE_IP') or define('APPSERVICE_IP', "http://124.207.20.98");
+defined('APPSERVICE_URL') or define('APPSERVICE_URL', "http://124.207.20.98/dabaojian/");
 
 // security
 defined('ALLOW_ROOT') or define('ALLOW_ROOT', true);

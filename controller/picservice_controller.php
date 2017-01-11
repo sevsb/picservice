@@ -37,6 +37,22 @@ class picservice_controller {
         echo $c;
     }
     
+    public function auth_token_action() {
+        $tourl = get_request('tourl');
+        $token = get_request('token');
+        $ret = picservice::auth_token($token);
+        if (!$ret) {
+            logging::e("TOKEN", "get_token_ret failed:" .$ret);
+            logging::e("LINK TO", "go to url:  ".APPSERVICE_URL."?picservice/auth_token_go&act=authret&ret=fail&tourl=$tourl");
+            $url = APPSERVICE_URL . "?picservice/auth_token_go&act=authret&ret=fail&tourl=$tourl";
+        } else {
+            logging::e("LINK TO", "go to url:  ".APPSERVICE_URL."?picservice/auth_token_go&act=authret&ret=success&tourl=$tourl");
+            $url = APPSERVICE_URL . "?picservice/auth_token_go&act=authret&ret=success&tourl=$tourl";
+        }
+        header("Location: " .$url);
+        return;
+    }
+    
     public function add_host_ajax() {
         $host = get_request('host');
         $namespace = get_request('namespace');
