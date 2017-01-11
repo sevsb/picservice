@@ -39,6 +39,8 @@ class picservice_controller {
     
     public function auth_token_action() {
         $tourl = get_request('tourl');
+        logging::e("tourl", "tourl:" .$tourl);
+        $tourl = urlencode($tourl);
         $token = get_request('token');
         $ret = picservice::auth_token($token);
         if (!$ret) {
