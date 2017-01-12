@@ -62,6 +62,10 @@ class db_picservice extends database {
         $appservice_ips = array();
         foreach ($appservices as $appservice) {
             $ip = $appservice['host'];
+            $ip = explode('//',$ip);
+            $ip = $ip[1];
+            $ip = explode('/', $ip);
+            $ip = "http://" . $ip[0];
             array_push($appservice_ips,$ip);
         }
         return $appservice_ips;
