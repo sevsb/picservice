@@ -42,7 +42,7 @@ class picservice_controller {
         $host = get_request('host');
         $namespace = get_request('namespace');
         $ret = picservice::add_host($host, $namespace);
-        return $ret ? array("ret" => "success", "info" => $code) : array("ret" => 'fail', "reason" => 'add_host_failed');
+        return $ret ? array("ret" => "success", "info" => $ret) : array("ret" => 'fail', "reason" => 'add_host_failed');
     }
     
     public function request_token_ajax() {
