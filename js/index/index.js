@@ -13,7 +13,7 @@ $(document).ready(function() {
              $.ajax({
                 url: host + 'ajax.php?action=picservice.update_code',
                 type: 'post',
-                data: {code: data.ret},
+                data: {code: data.info},
                 success: function (data) {
                     console.debug(data);
                     window.location.href = '?';
