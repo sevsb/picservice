@@ -11,8 +11,8 @@
     <hr>
     <h2>当前host</h2>
     <?php
-    //var_dump($all_tables);
-    //$all_data = picservice::get_all_appserviceip();
+    //var_dump($_SERVER);
+    //$all_data = db_picservice::inst()->get_all_appserviceips();
     //var_dump($all_data);
     foreach ($all_tables as $table) {
         $table = $table['Tables_in_picservice'];

@@ -16,10 +16,14 @@ class picservice {
     
     public static function load_access_allows () {
         $hosts = db_picservice::inst()->get_all_appserviceips();
-        foreach ($hosts as $host) {
-            header("Access-Control-Allow-Origin: " . $host );
-            logging::e("HEADER", "header access allow:" . $host);
-        }
+        $origin = isset($_SERVER['HTTP_ORIGIN'])? $_SERVER['HTTP_ORIGIN'] : '';  
+        logging::e("SERVER:","orgin:".$origin);
+
+        if(in_array($origin, $hosts)){  
+            header('Access-Control-Allow-Origin:'.$origin);  
+            header('Access-Control-Allow-Methods:POST');  
+            header('Access-Control-Allow-Headers:x-requested-with,content-type');  
+        }  
         return true;;
     }
     
