@@ -15,18 +15,15 @@ function uploadImageViaFileReader($imgsrc = null,$upload_path = UPLOAD_DIR, $cal
     $arr = explode(";", $imgsrc);
     if (count($arr) != 2) {
         return callback('fail', '数据错误');
-        //return "fail|数据错误.";
     }
 
     $arr1 = explode(":", $arr[0]);
     if (count($arr1) != 2) {
         return callback('fail', '数据错误');
-        //return "fail|数据错误..";
     }
     $type = $arr1[1];
     if (!in_array($type, $whitelist)) {
         return callback('fail', "不支持的文件格式: $type");
-        //return "fail|不支持的文件格式: $type.";
     }
 
     $type = explode('/', $type);
@@ -39,7 +36,6 @@ function uploadImageViaFileReader($imgsrc = null,$upload_path = UPLOAD_DIR, $cal
         $ret = @mkdir($upload_path, 0777, true);
         if ($ret === false) {
             return callback('fail', '上传目录创建失败');
-            //return "fail|上传目录创建失败.";
         }
     }
 
@@ -48,12 +44,8 @@ function uploadImageViaFileReader($imgsrc = null,$upload_path = UPLOAD_DIR, $cal
     $filepath = $upload_path . "/$filename";
     if (!file_put_contents($filepath, $image_content)) {
         return callback('fail', '创建文件失败');
-        //return 'fail|创建文件失败.';
     }
-    if ($callback != null) {
-        return $callback('success', $filename);
-    }
-    return "success";
+    return callback('success', $filename);
 }
 
 function callback($status, $info) {
