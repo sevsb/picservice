@@ -81,7 +81,7 @@ class picservice_controller {
             logging::e("token refresh:", $token);
             logging::e("token udate_token_ret:", $udate_token_ret);
         }
-        return $udate_token_ret ? array('token' => $token, 'expired' => $expired) : 'failed';
+        return $udate_token_ret ? array("ret"=> "success" ,'token' => $token, 'expired' => $expired) : array("ret"=> "fail" ,'reason' => "request_token_failed");
     }
     
     public function upload_image_ajax() {
