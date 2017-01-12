@@ -3,7 +3,6 @@
     <hr>
     <h2>新增host</h2>
     <div class=''>地址<input class='host' name=''></div>
-    <div class=''>数据库前缀<input class='prefix' name='' value='common'></div>
     <div class=''>命名空间<input class='namespace' name=''></div>
     <div>
     <button class='submit_btn'>提交</button>
@@ -13,11 +12,8 @@
     <?php
     //var_dump($_SERVER);
     //$all_data = db_picservice::inst()->get_all_appserviceips();
-    //var_dump($all_data);
-    foreach ($all_tables as $table) {
-        $table = $table['Tables_in_picservice'];
-        echo $table.'<br>';
-        ?>
+    //var_dump($appservices);
+    ?>
         <table class="table table-hover">
             <tr>
                 <td>id</td>
@@ -28,8 +24,8 @@
                 <td>namespace</td>
             </tr>
         <?php
-        $tab = picservice::get_access($table);
-        foreach ($tab as $tb) {
+        //$tab = picservice::get_access($table);
+        foreach ($appservices as $tb) {
         ?>
             <tr>
                 <td><?php echo $tb['id']; ?></td>
@@ -43,9 +39,7 @@
         }
         ?>
         <table>
-        <?php
-    }    
-    ?>
+
     </div>
 </div>
 

@@ -41,10 +41,8 @@ class picservice_controller {
     public function add_host_ajax() {
         $host = get_request('host');
         $namespace = get_request('namespace');
-        $prefix = get_request('prefix');
-        
-        $ret = picservice::add_host($host, $namespace, $prefix);
-        return $ret;
+        $ret = picservice::add_host($host, $namespace);
+        return $ret ? array("ret" => "success", "info" => $code) : array("ret" => 'fail', "reason" => 'add_host_failed');
     }
     
     public function request_token_ajax() {

@@ -3,9 +3,9 @@ include_once(dirname(__FILE__) . "/config.php");
 
 class picservice {
     
-    public static function add_host ($host, $namespace, $prefix) {
+    public static function add_host ($host, $namespace) {
         $code = md5(uniqid());
-        $ret = db_picservice::inst()->add_host($host, $code, $namespace, $prefix);
+        $ret = db_picservice::inst()->add_host($host, $code, $namespace);
         return $ret ? $code : false;
     }
 

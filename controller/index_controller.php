@@ -6,8 +6,8 @@ class index_controller {
 
     public function index_action() {
         $tpl = new tpl("index/header", "index/footer");
-        $all_tables = picservice::get_all_prefix();
-        $tpl->set("all_tables", $all_tables);
+        $appservices = db_picservice::inst()->get_all_appservices();
+        $tpl->set("appservices", $appservices);
         $tpl->display("index/index");
     }
 

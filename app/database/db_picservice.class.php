@@ -39,10 +39,9 @@ class db_picservice extends database {
         logging::d("Database", $res);
     }
     
-    public function add_host($host, $code, $namespace ,$prefix) {
-        $this->create_table($prefix . '_access',  array("host" => "TEXT", "code" => "TEXT", "token" => "TEXT", "expired" => "TEXT", "namespace" => "TEXT"));
-
-        return $this->insert($prefix.'_access' , array("host" => $host, "code" => $code, "namespace" => $namespace));
+    public function add_host($host, $code, $namespace) {
+        $this->create_table(MYSQL_PREFIX . 'access',  array("host" => "TEXT", "code" => "TEXT", "token" => "TEXT", "expired" => "TEXT", "namespace" => "TEXT"));
+        return $this->insert(MYSQL_PREFIX . 'access' , array("host" => $host, "code" => $code, "namespace" => $namespace));
     }
     
     public function get_access($table) {
