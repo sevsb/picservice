@@ -11,8 +11,9 @@
     <hr>
     <h2>当前host</h2>
     <?php
-    $all_tables = picservice::get_all_prefix();
     //var_dump($all_tables);
+    //$all_data = picservice::get_all_appserviceip();
+    //var_dump($all_data);
     foreach ($all_tables as $table) {
         $table = $table['Tables_in_picservice'];
         echo $table.'<br>';

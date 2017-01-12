@@ -14,6 +14,14 @@ class picservice {
         return $ret;
     }
     
+    public static function load_access_allows () {
+        $hosts = db_picservice::inst()->get_all_appserviceips();
+        foreach ($hosts as $host) {
+            header("Access-Control-Allow-Origin: " . $host );
+        }
+        return true;;
+    }
+    
     public static function get_access ($table) {
         $ret = db_picservice::inst()->get_access($table);
         return $ret;

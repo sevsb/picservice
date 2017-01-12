@@ -53,6 +53,21 @@ class db_picservice extends database {
         return $this->show_all_tables();
     }
     
+    public function get_all_appservices() {
+        return $this->get_all_table(MYSQL_PREFIX . 'access');
+    }
+    
+    public function get_all_appserviceips () {
+        $appservices = $this->get_all_appservices();
+        $appservice_ips = array();
+        foreach ($appservices as $appservice) {
+            $ip = $appservice['host'];
+            array_push($appservice_ips,$ip);
+        }
+        return $appservice_ips;
+    }
+    
+    
     public function update_token($host, $code, $token, $expired) {
         return $this->update(MYSQL_PREFIX . 'access', array("token" => $token, "expired" => $expired), "host = '$host' and code = '$code'");
     }
