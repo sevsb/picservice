@@ -18,7 +18,7 @@ class picservice {
         $hosts = db_picservice::inst()->get_all_appserviceips();
         foreach ($hosts as $host) {
             header("Access-Control-Allow-Origin: " . $host );
-            logging:e("HEADER", "header access allow:" . $host);
+            logging::e("HEADER", "header access allow:" . $host);
         }
         return true;;
     }
