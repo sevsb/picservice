@@ -18,15 +18,15 @@ class picservice_controller {
         
         $img_path = UPLOAD_DIR . "/" . MYSQL_PREFIX . 'access/' .$ret["namespace"];
         $img_file = $img_path . "/" . $filename;
-        if ($thumb == 1) {
+        if ($thumb == 0) {
             $img_path = THUMBNAIL_DIR . "/" . MYSQL_PREFIX . 'access/' .$ret["namespace"];
             $img_file = $img_path . "/" . "thumbnail-$filename";
         }
        
         if (!$ret) {
             echo 'token authorise failed';
-            header("Location:" . $redirecturl . "?picservice/request_token&filename=$filename");
-            logging::e("token authorise failed:", $ret . "now redirect to " . $redirecturl . "?picservice/request_token&filename=$filename");
+            header("Location:" . $redirecturl . "?picservice/request_token&filename=$filename&thumb=$thumb");
+            logging::e("token authorise failed:", $ret . "now redirect to " . $redirecturl . "?picservice/request_token&thumb=$thumb&filename=$filename");
             return;
         }
         if ($refer_host != $ret['host']) {
