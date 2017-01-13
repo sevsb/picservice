@@ -6,7 +6,7 @@ class picservice_controller {
 
     public function show_action() {
         picservice::load_access_allows();
-        
+        $thumb = get_request("thumb");
         $token = get_request("token");
         $filename = get_request("filename");
         $redirecturl = get_request("redirecturl");
@@ -15,8 +15,13 @@ class picservice_controller {
         $ret = picservice::auth_token($token);
         $refer_host = explode('?',$refer);
         $refer_host = $refer_host[0];
+        
         $img_path = UPLOAD_DIR . "/" . MYSQL_PREFIX . 'access/' .$ret["namespace"];
         $img_file = $img_path . "/" . $filename;
+        if ($thumb == 1) {
+            $img_path = THUMBNAIL_DIR . "/" . MYSQL_PREFIX . 'access/' .$ret["namespace"];
+            $img_file = $img_path . "/" . "thumbnail-$filename";
+        }
        
         if (!$ret) {
             echo 'token authorise failed';
@@ -76,11 +81,14 @@ class picservice_controller {
         if (!$ret) {
             return array("status" => "fail","info" => 'token_fail');
         }
-        
-        $upload_path = UPLOAD_DIR . "/". MYSQL_PREFIX . "access/".$ret['namespace']."/";
-        logging::e("upload_image_path:", $upload_path);
+        $namespace = $ret['namespace'];
+        $upload_path = UPLOAD_DIR . "/". MYSQL_PREFIX . "access/".$namespace."/";
         $ret = uploadImageViaFileReader($img_src, $upload_path);
-        logging::e("upload_image_ret:", $ret);
+        $filename = $ret['info'];
+        $ret1 = mkUploadThumbnail($namespace, $filename, 100);
+        if(!$ret1) {
+            return array('ret' => "fail", "reason" => "mkthumbnail failed.");
+        }
         return $ret;
     }
 

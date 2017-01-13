@@ -71,17 +71,21 @@ function mkThumbnail($src, $width = 0, $height = 0, $filename = null) {
 
 // $result = mkThumbnail('./IMG_3324.JPG', 147, 147);
 
-function mkUploadThumbnail($filename, $width = 0, $height = 0) {
+function mkUploadThumbnail($namespace, $filename, $width = 0, $height = 0) {
     if (empty($filename)) {
         return null;
     }
-    $filepath = rtrim(UPLOAD_DIR, "/") . "/$filename";
-    $thumbnail = rtrim(THUMBNAIL_DIR, "/") . "/thumbnail-$filename";
-    if (!is_dir(THUMBNAIL_DIR)) {
-        mkdir(THUMBNAIL_DIR, 0777, true);
+    $filepath = rtrim(UPLOAD_DIR, "/") . "/". MYSQL_PREFIX . "access" . "/$namespace" . "/$filename";
+    $thumbnail = rtrim(THUMBNAIL_DIR, "/") . "/".MYSQL_PREFIX . "access" . "/$namespace" . "/thumbnail-$filename";
+    $thumbnail_dir = rtrim(THUMBNAIL_DIR, "/") . "/".MYSQL_PREFIX . "access" . "/$namespace";
+    logging::e("filepath", $filepath);
+    logging::e("thumbnail", $thumbnail);
+    logging::e("thumbnail_dir", $thumbnail_dir);
+    if (!is_dir($thumbnail_dir)) {
+        mkdir($thumbnail_dir, 0777, true);
     }
     if (is_file($thumbnail)) {
-        return rtrim(THUMBNAIL_URL, "/") . "/thumbnail-$filename";
+        return $thumbnail_dir . "/thumbnail-$filename";
     }
 
     if (!is_file($filepath)) {
@@ -89,7 +93,7 @@ function mkUploadThumbnail($filename, $width = 0, $height = 0) {
     }
     mkThumbnail($filepath, $width, $height, $thumbnail);
     if (is_file($thumbnail)) {
-        return rtrim(THUMBNAIL_URL, "/") . "/thumbnail-$filename";
+        return $thumbnail_dir . "/thumbnail-$filename";
     }
     return null;
 }
