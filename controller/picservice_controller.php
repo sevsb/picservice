@@ -9,6 +9,7 @@ class picservice_controller {
         
         $token = get_request("token");
         $filename = get_request("filename");
+        $redirecturl = get_request("redirecturl");
         $refer = !empty($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : null;
         
         $ret = picservice::auth_token($token);
@@ -19,7 +20,8 @@ class picservice_controller {
        
         if (!$ret) {
             echo 'token authorise failed';
-            logging::e("token authorise failed:", $ret);
+            header("Location:" . $redirecturl . "?picservice/request_token&filename=$filename");
+            logging::e("token authorise failed:", $ret . "now redirect to " . $redirecturl . "?picservice/request_token&filename=$filename");
             return;
         }
         if ($refer_host != $ret['host']) {
@@ -52,16 +54,16 @@ class picservice_controller {
         $code = get_request('code');
 
         $auth_ret = picservice::auth_code($host, $code);
-        logging::e("token auth_ret:", $auth_ret);
-        if ($auth_ret) {
-            $token = md5($host . $code . time());
-            $expired = time() + EXPIRED_TIME;
-
-            $udate_token_ret = picservice::update_token($host, $code, $token, $expired);
-            logging::e("token refresh:", $token);
-            logging::e("token udate_token_ret:", $udate_token_ret);
+        if (!$auth_ret) {
+            logging::e("code autho failed:", $auth_ret);
+            return array("ret"=> "fail" ,'reason' => "code autho failed");
         }
-        return $udate_token_ret ? array("ret"=> "success" ,'token' => $token, 'expired' => $expired) : array("ret"=> "fail" ,'reason' => "request_token_failed");
+        $token = md5($host . $code . time());
+        $expired = time() + EXPIRED_TIME;
+        $udate_token_ret = picservice::update_token($host, $code, $token, $expired);
+        logging::e("token refresh:", $token);
+        logging::e("token udate_token_ret:", $udate_token_ret);
+        return !empty($udate_token_ret) ? array("ret"=> "success" ,'token' => $token, 'expired' => $expired) : array("ret"=> "fail" ,'reason' => "request_token_failed");
     }
     
     public function upload_image_ajax() {
